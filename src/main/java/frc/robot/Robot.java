@@ -45,7 +45,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     TalonFXConfiguration configs = new TalonFXConfiguration();
-    configs.Slot0.kP = 0.65;  // An error of 0.5 rotations results in 1.2 volts output
+    configs.Slot0.kP = 0.650;  // An error of 0.5 rotations results in 1.2 volts output
     configs.Slot0.kD = 0.00048; // A change of 1 rotation per second results in 0.1 volts output
     // Peak output of 8 volts
     configs.Voltage.PeakForwardVoltage = 8;
